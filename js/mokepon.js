@@ -186,7 +186,7 @@ function secuenciaAtaque(){
     }
 
         function combate(){
-for (let = 0; index<ataqueJugador.length; index++){
+for (let = 0; index<ataqueJugador.length;index++){
     console.log(ataqueJugador[index])
 }            
 
@@ -258,7 +258,5 @@ for (let = 0; index<ataqueJugador.length; index++){
     function aleatorio(min, max){
         return Math.floor(Math.random() * (max - min + 1) + min)
     }
-
-      
 
 window.addEventListener('load', iniciarJuego)
