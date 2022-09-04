@@ -40,11 +40,11 @@ class Mokepon {
     }
 }
 
-let Hipodoge=new Mokepon('Hipodoge', './asets/mokepons_mokepon_hipodoge_attack.png', 5)
+let Hipodoge=new Mokepon('Hipodoge', './assets/Squirtle.webp', 5)
 
-let Capipepo = new Mokepon('Capipepo', './asets/mokepons_mokepon_capipepo_attack.jpg', 5)
+let Capipepo = new Mokepon('Capipepo', './assets/Bulbasaur.webp', 5)
 
-let Ratigueya = new Mokepon('Ratigueya', './asets/mokepons_mokepon_ratigueya_attack.png', 5)
+let Ratigueya = new Mokepon('Ratigueya', './assets/Charmander.webp', 5)
 
 Hipodoge.ataques.push( 
     {nombre: '💧', id: 'boton-agua'},
