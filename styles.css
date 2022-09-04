@@ -63,7 +63,7 @@ input{
 }
 
 input:checked + label {
-    background-color: #21E1E1
+    background-color: #21E1E1;
 }
 
 #seleccionar-ataque{
@@ -104,7 +104,7 @@ input:checked + label {
     display:grid;
     grid-template-columns: 100px 100px;
     text-align: center;
-    color: #F29393
+    color: #F29393;
 }
 
 #vidas-jugador,#vidas-enemigo{
