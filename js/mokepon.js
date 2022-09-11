@@ -181,13 +181,13 @@ function secuenciaAtaque(){
     
     function iniciarPelea(){
         if (ataqueJugador.length === 5 ){
-            combate()
+            combate() 
         }
     }
 
         function combate(){
-for (let = 0; index<ataqueJugador.length;index++){
-    console.log(ataqueJugador[index])
+for (let index= 0; index<ataqueJugador.length; index++){
+    
 }            
 
             if (ataqueJugador== ataqueEnemigo){
