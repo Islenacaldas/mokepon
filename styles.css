@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #554994;
+    background-image: url('./assets/fondo.jpeg');
 }
 
 #seleccionar-mascota{
@@ -33,14 +33,14 @@ body{
 .tarjeta-de-mokepon{
     width: 180px;
     height: 100px;
-    background: #F675A8;
+    background: slategray;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: mistyrose;
 }
 
 .tarjeta-de-mokepon img {
@@ -53,7 +53,7 @@ width: 80px;
     border-radius: 20px;
     background: transparent;
     border:  2px solid white;
-    color: #D61C4E;
+    color: white;
     font-family: 'Poppins', sans-serif;
     margin-top: 30px;
 }
@@ -73,19 +73,19 @@ input:checked + label {
 }
 
 .boton-de-ataque{
-    background-color: #F675A8;
+    background-color: mintcream;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
     border-color: transparent;
-    width: 100px;
+    width: 80px;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
 
 #mensajes{
     width: 280px;
-    background: #F29393;
+    background: mintcream;
     padding: 20px;
     margin-top: 20px;
     border-radius: 20px;
@@ -104,7 +104,7 @@ input:checked + label {
     display:grid;
     grid-template-columns: 100px 100px;
     text-align: center;
-    color: #F29393;
+    color: black;
 }
 
 #vidas-jugador,#vidas-enemigo{
@@ -118,8 +118,32 @@ input:checked + label {
     align-items: center;
 }
 
-@media (max-width: 360px){
+#ver-mapa{
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border:  2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+}
+
+@media (max-width: 560px){
     .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
+@media (max-width: 300px){
+    #ver-mapa div{
+        display: flex;
+        -ms-grid-column-align: center;
         flex-direction: column;
     }
 }
