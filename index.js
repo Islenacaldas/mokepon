@@ -50,10 +50,11 @@ app.post("/mokepon/:jugadorId", (req, res) =>{
         jugadores[jugadorIndex].asignarMokepon(mokepon)
     }
 
+    const enemigos = jugadores.filter((jugador) => jugadorId !== jugador.id)
 
-    console.log(jugadores)
-    console.log(jugadorId)
-    res.end()
+    res.send({
+        enemigos
+    })
 })
 
 app.post("/mokepon/:jugadorId/posicion", (req, res) =>{

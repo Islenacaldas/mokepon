@@ -1,5 +1,3 @@
-const { json } = require("body-parser")
-
 const sectionSeleccionarAtaque=document.getElementById('seleccionar-ataque')
 const sectionReiniciar=document.getElementById('reiniciar')
 const botonMascotaJugador=document.getElementById('boton-mascota')
