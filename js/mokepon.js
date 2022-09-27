@@ -171,17 +171,36 @@ function unirseAlJuego() {
 function seleccionarMascotaJugador()
 {sectionSeleccionarMascota.style.display='none'
 
-if(inputHipodoge.checked)
+    if(inputHipodoge.checked)
 {spanMascotaJugador.innerHTML=inputHipodoge.id
-mascotaJugador=inputHipodoge.id}
-else if(inputCapipepo.checked){spanMascotaJugador.innerHTML=inputCapipepo.id
-mascotaJugador=inputCapipepo.id}
-else if(inputRatigueya.checked){spanMascotaJugador.innerHTML=inputRatigueya.id
-mascotaJugador=inputRatigueya.id}
-else{alert('Selecciona una mascota')}
-extraerAtaques(mascotaJugador)
-sectionVerMapa.style.display='flex'
-iniciarMapa()}
+    mascotaJugador=inputHipodoge.id}
+    else if(inputCapipepo.checked)
+    {spanMascotaJugador.innerHTML=inputCapipepo.id
+    mascotaJugador=inputCapipepo.id}
+    else if(inputRatigueya.checked)
+    {spanMascotaJugador.innerHTML=inputRatigueya.id
+    mascotaJugador=inputRatigueya.id}
+
+    else{alert('Selecciona una mascota')}
+
+    seleccionarMokepon(mascotaJugador)
+
+    extraerAtaques(mascotaJugador)
+    sectionVerMapa.style.display='flex'
+    iniciarMapa()}
+
+function seleccionarMokepon(mascotaJugador){
+    fetch(`http://localhost:8080/mokepon/${jugadorId}`, {
+        method:"post",
+        Headers: {
+            "content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            mokepon: mascotaJugador
+        })
+            
+    } )
+}
 
 function extraerAtaques(mascotaJugador)
 {
