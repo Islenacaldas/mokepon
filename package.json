@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Islenacaldas/mokepon/issues"
   },
-  "homepage": "https://github.com/Islenacaldas/mokepon#readme"
+  "homepage": "https://github.com/Islenacaldas/mokepon#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
